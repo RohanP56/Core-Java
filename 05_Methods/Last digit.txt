@@ -1,0 +1,1 @@
+last digit of any number = (number%10)
