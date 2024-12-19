@@ -1,0 +1,5 @@
+*. Run the outer for-loop, the number of times. how many the lines  (No. of Rows)
+
+*. Identify how many columns are there in each Row.
+
+*. what do need to print
