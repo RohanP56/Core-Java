@@ -1,0 +1,9 @@
+- Polymorphism can be defined as a pillar of object-oriented programming, which enables a single entity of a class of exist in multiple forms, or, behave in multiple ways.
+- Dynamic Method Dispatch:
+
+- Dynamic Method Dispatch: The Java runtime automatically invokes the correct send() method based on the actual object type referred to by msg. This dynamic behavior is central to polymorphism and eliminates the need for conditional checks or separate method calls for each type.
+
+                Polymorphism Two types
+    - Method Overriding: Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. The method in the subclass must have the same name, return type, and parameters as the method in the superclass. This feature allows a subclass to modify or extend the behavior of the superclass method.
+
+    - Method Overloading: Method overloading occurs when multiple methods in the same class have the same name but different parameters. It can differ in the number of parameters, or the type of parameters, or both. This feature allows a class to perform a single action in different ways depending on the parameters passed to the method.
