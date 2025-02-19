@@ -3,7 +3,17 @@
 
 - Dynamic Method Dispatch: The Java runtime automatically invokes the correct send() method based on the actual object type referred to by msg. This dynamic behavior is central to polymorphism and eliminates the need for conditional checks or separate method calls for each type.
 
-                Polymorphism Two types
+                                                Polymorphism Two types
     - Method Overriding: Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. The method in the subclass must have the same name, return type, and parameters as the method in the superclass. This feature allows a subclass to modify or extend the behavior of the superclass method.
 
     - Method Overloading: Method overloading occurs when multiple methods in the same class have the same name but different parameters. It can differ in the number of parameters, or the type of parameters, or both. This feature allows a class to perform a single action in different ways depending on the parameters passed to the method.
+
+
+                            Casting
+Typecasting is one of the most important concepts which basically deals with the conversion of one data type to another datatype implicitly or explicitly. In this article, the concept of typecasting for objects is discussed.
+        - Upcasting: It is the process of converting a subclass reference to a superclass reference.
+        - Downcasting: Similarly, downcasting means the typecasting of a parent object to a child object. Downcasting cannot be implicit.
+
+
+        * UpCasting use for polymorphism
+        * DownCasting use for accessing child Specific method using parent class object.
