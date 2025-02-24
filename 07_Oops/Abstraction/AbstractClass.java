@@ -1,11 +1,10 @@
-class Shape {
-    void acceptInput() {
-        System.out.println("Accept Input for Shape");
-    }
+//Abstraction
 
-    void calculateArea() {
-        System.out.println("Calculate Area for Shape");
-    }
+//Abstract Class
+abstract class Shape {
+    abstract void acceptInput(); // abstract method: We have to must implement the abstract methods.
+
+    abstract void calculateArea(); // abstract method
 }
 
 class Circle extends Shape {
@@ -56,23 +55,20 @@ class Square extends Shape {
     }
 }
 
-public class CastingDemo {
+public class AbstractClass {
     public static void main(String[] args) {
-        Shape s = new Shape(); // upacsting
+        Circle c = new Circle();
+        c.acceptInput();
+        c.calculateArea();
+        c.displayCircleArea();
+        Rectange r = new Rectange();
+        r.acceptInput();
+        r.calculateArea();
+        r.displayRectangeArea();
+        Square s = new Square();
         s.acceptInput();
         s.calculateArea();
-        s = new Circle();
-        s.acceptInput();
-        s.calculateArea();
-        ((Circle) s).displayCircleArea(); // DownCasting
-        s = new Rectange();
-        s.acceptInput();
-        s.calculateArea();
-        ((Rectange) s).displayRectangeArea(); // DownCasting
-        s = new Square();
-        s.acceptInput();
-        s.calculateArea();
-        ((Square) s).displaySquareArea(); // DownCasting
+        s.displaySquareArea();
     }
 }
 
