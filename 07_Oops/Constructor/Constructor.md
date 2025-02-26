@@ -10,7 +10,7 @@
 
 - **Default Costructor:** A constructor that has no parameters is known as default constructor. A default constructor is invisible. And if we write a constructor with no arguments, the compiler does not create a default constructor.
 - **Parameterized Constructor:** A constructor that has parameters is known as parameterized constructor. If we want to initialize fields of the class with our own values, then use a parameterized constructor.
-- **Copy Constructor:** Unlike other constructors copy constructor is passed with another object which copies the data available from the passed object to the newly created object.
+- **Copy Constructor:** A copy constructor is a special type of constructor used to create a new object as a duplicate of an existing object with the same data. It is particularly useful when you need a deep copy of objects to ensure that the new object has its own separate copies of any mutable objects or data structures.
 
 # The Shadowing Problem:
 
@@ -71,3 +71,11 @@ public class TestInheritance {
     }
 }
 ```
+
+## 'super' keyword
+The super keyword in Java is a reference variable that is used to refer to the parent class objects. It is commonly used for three main purposes: to access methods of the parent class, to access the constructor of the parent class, and to access fields of the parent class if they are shadowed by subclasses.
+
+### Why Use the super Keyword?
+- **Method Overriding:** To call the parent class's method when it has been overridden in a child class.
+- **Field Access:** To access fields of the parent class that are hidden or shadowed by child class fields.
+

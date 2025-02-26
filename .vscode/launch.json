@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Constructor",
+            "request": "launch",
+            "mainClass": "Constructor",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorChaining1_this",
+            "request": "launch",
+            "mainClass": "ConstructorChaining1_this",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorChaining2_SuperMethod",
+            "request": "launch",
+            "mainClass": "ConstructorChaining2_SuperMethod",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorOverloading",
+            "request": "launch",
+            "mainClass": "ConstructorOverloading",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "DefaultConstructor",
+            "request": "launch",
+            "mainClass": "DefaultConstructor",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "DynamicMethodDispatch",
+            "request": "launch",
+            "mainClass": "DynamicMethodDispatch",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "FinalDemo",
+            "request": "launch",
+            "mainClass": "FinalDemo",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "Functional_Interface",
+            "request": "launch",
+            "mainClass": "Functional_Interface",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Keywords.Static.Main",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "StaticDemo",
+            "request": "launch",
+            "mainClass": "Keywords.Static.StaticDemo",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "SuperKeywordDemo",
+            "request": "launch",
+            "mainClass": "Keywords.Super.SuperKeywordDemo",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ThisKeywordDemo",
+            "request": "launch",
+            "mainClass": "Keywords.This.ThisKeywordDemo",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "MethodOverloading",
+            "request": "launch",
+            "mainClass": "MethodOverloading",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "MethodOverriding",
+            "request": "launch",
+            "mainClass": "MethodOverriding",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "fire",
+            "request": "launch",
+            "mainClass": "Packages.fire",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ghostzen",
+            "request": "launch",
+            "mainClass": "Packages.ghostzen",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ghstzen",
+            "request": "launch",
+            "mainClass": "Packages.ghstzen",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ghstzen_family",
+            "request": "launch",
+            "mainClass": "Packages.ghstzen_family",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "ghstzen_pro",
+            "request": "launch",
+            "mainClass": "Packages.ghstzen_pro",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "access_modifier",
+            "request": "launch",
+            "mainClass": "access_modifier",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "access_modifier_h",
+            "request": "launch",
+            "mainClass": "access_modifier_h",
+            "projectName": "Java_eda50747"
+        },
+        {
+            "type": "java",
+            "name": "parameterizedConstructor",
+            "request": "launch",
+            "mainClass": "parameterizedConstructor",
+            "projectName": "Java_eda50747"
+        }
+    ]
+}

@@ -19,7 +19,7 @@ class Car extends Vehicle {
     }
 }
 
-public class ConstructorChaining2_super {
+public class ConstructorChaining2_SuperMethod {
     public static void main(String[] args) {
         Car myCar = new Car("Tesla Model S");  // This will invoke the Car constructor
     }
