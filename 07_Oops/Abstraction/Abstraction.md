@@ -1,7 +1,7 @@
-# **Abstraction**
+# Abstraction
 
 * ***Abstraction: It's a process of hiding unnecessary data.***
-* In a Abstract class there may be Abstract mrthod or concrate method.
+* In a Abstract class there may be Abstract mrthod or concreate method.
 * Abstract class will be public by default.
 * We can't create object of abstract class.
 * If a class in Java is declared as an abstract class and it contains one or more abstract methods, then any subclass that extends this abstract class must implement all the abstract methods.
@@ -12,9 +12,9 @@
 * To declare abstract method, the class have to be abstracat.
 * Abstract mathod will be public and void by default.
 
-### Interface
+# Interface
 
-An interface in Java serves as a contract or a blueprint for classes. It outlines a set of methods that any class implementing the interface must provide. However, it specifies what actions must be performed without dictating how to perform them.
+**An interface in Java serves as a contract or a blueprint for classes. It outlines a set of methods that any class implementing the interface must provide. However, it specifies what actions must be performed without dictating how to perform them.**
 
 * Inside interface all variables are public, static, final.
 * Inside interface all methods are (public & abstract) by default.

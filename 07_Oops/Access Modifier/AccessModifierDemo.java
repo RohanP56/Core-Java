@@ -1,5 +1,5 @@
 //Harry
-public class access_modifier_h {
+public class AccessModifierDemo {
     public static void main(String[] args) {
         Employee emp = new Employee();
         /*we can't access these because these are private

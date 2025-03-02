@@ -107,3 +107,118 @@ public class TestPrinter {
 }
 ```
 *In this example, the log method of SecurePrinter is private, so it cannot be accessed directly from outside its class, not even from a class in the same package.*
+
+
+## Visibility of abstract methods
+
+#### Why Can’t Abstract Methods Be Private?
+Think of it like this: Abstract methods are like instructions for a robot.
+If you make the instructions private, no one can read them, and the robot won’t know what to do.
+**In Java, abstract methods are meant to be implemented (filled in) by child classes. If they are private, child classes can’t see or use them, and the whole point of having abstract methods is lost.**
+
+``` Java
+class HomeRobot extends Robot {
+    public void walk() {
+        System.out.println("Home Robot is walking slowly.");
+    }
+    protected void performTask() {
+        System.out.println("Home Robot is talking in Hindi.");
+    }
+}
+
+class FactoryRobot extends Robot {
+    public void walk() {
+        System.out.println("Factory Robot is walking fast.");
+    }
+    protected void performTask() {
+        System.out.println("Factory Robot is lifting heavy items.");
+    }
+}
+```
+*Here, the walk() method is public, so anyone can use it. The performTask() method is protected, so only the child classes (HomeRobot and FactoryRobot) can use it.*
+
+- Abstract methods are like plans or ideas. They don’t have a body (no code inside them).
+- Visibility means who can see and use the method.
+- Abstract methods can be:
+    - **Public**: Everyone can see and use them.
+    - **Protected**: Only child classes can see and use them.
+    - **Private**: NOT ALLOWED! (Because no one can see or use them, and the plan fails.)
+
+## Method overriding feat. access modifiers
+**It’s when a child class takes a method from its parent class and gives it a new twist. You keep the same method name and parameters, but you change what it does.**
+
+#### 1. Public to Public:
+- Parent class method is public.
+- Child class method must also be public.
+``` Java
+class Parent {
+    public void makeChai() {
+        System.out.println("Boil water, add tea leaves, sugar, and milk.");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    public void makeChai() {
+        System.out.println("Boil water, add tea leaves, sugar, milk, ginger, and cardamom.");
+    }
+}
+```
+*Here, the makeChai() method in the Child class is public, just like in the Parent class.*
+
+#### 2. Protected to Public
+- Parent class method is protected.
+- Child class method can be protected or public (more visible).
+``` Java
+class Parent {
+    protected void makeChai() {
+        System.out.println("Boil water, add tea leaves, sugar, and milk.");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    public void makeChai() {
+        System.out.println("Boil water, add tea leaves, sugar, milk, ginger, and cardamom.");
+    }
+}
+```
+*Here, the makeChai() method in the Child class is public, which is more visible than protected. This is allowed.*
+
+####  3. Default (Package-Private) to Protected
+- Parent class method has default (package-private) access.
+- Child class method can be default, protected, or public (same or more visible).
+``` Java
+class Parent {
+    void makeChai() { // Default (package-private) access
+        System.out.println("Boil water, add tea leaves, sugar, and milk.");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    protected void makeChai() {
+        System.out.println("Boil water, add tea leaves, sugar, milk, ginger, and cardamom.");
+    }
+}
+```
+*Here, the makeChai() method in the Child class is protected, which is more visible than default. This is allowed.*
+
+#### 4. Default to Private? NO!
+- Parent class method has default (package-private) access.
+- Child class method can’t be private (less visible).
+``` Java
+class Parent {
+    void makeChai() { // Default (package-private) access
+        System.out.println("Boil water, add tea leaves, sugar, and milk.");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    private void makeChai() { // This will give an ERROR!
+        System.out.println("Boil water, add tea leaves, sugar, milk, ginger, and cardamom.");
+    }
+}
+```
+*This code will not work because the makeChai() method in the Child class is private, which is less visible than default.*

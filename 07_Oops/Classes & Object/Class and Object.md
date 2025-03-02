@@ -1,9 +1,8 @@
-All about classes & objects:
-----------------------------
+# Classes & Objects
 
 - Object-Oriented Programming (OOP): A programming paradigm that intends to solve real-world problems.
-- Objects: Programming representations of real-world entities. Each object can store data (attributes) and use behaviours (methods) defined by its class.
-- Classes: Templates or blueprints for creating objects, defining what data they hold and what actions they can perform.
+- **Objects:** Programming representations of real-world entities. Each object can store data (attributes) and use behaviours (methods) defined by its class.
+- **Classes:** Templates or blueprints for creating objects, defining what data they hold and what actions they can perform.
 - Instance Variables: Variables that are specific to each instance of a class. Each object created from a class has its own set of data, represented by instance variables that hold the object's state.
 - Local Variables: Variables that exist within the scope of a block or method. They are created when the block or method is entered, and their scope is limited to that block or method; they are destroyed once it exits.
 - Heap Memory: A region of memory used to store objects and arrays in Java. Objects live in the heap and remain in memory as long as they are accessible or referenced by some part of your program.

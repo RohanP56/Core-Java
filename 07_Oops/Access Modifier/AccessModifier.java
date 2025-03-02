@@ -1,4 +1,4 @@
-public class access_modifier {
+public class AccessModifier {
     public static void main(String[] args) {
         BankAccount myAccount = new BankAccount();
         myAccount.username = "Punjab National Bank";
