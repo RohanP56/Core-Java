@@ -40,13 +40,15 @@ public class AnonymousClasses {
 
                                                             Another Example
                             
-interface Greeter {
+interface Greeter {  // functional interface, which interface have single abstract method 
     String greet();
 }
 
 public class Main {
     public static void main(String[] args) {
         Greeter anonymousGreeter = new Greeter() {
+        //here we are creating anonymous object
+        
             public String greet() {
                 return "Hello from Anonymous Inner Class!";
             }
